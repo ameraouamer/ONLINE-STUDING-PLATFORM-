@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 271 91% 65%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 271 91% 65%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 270 50% 10%;
+    --foreground: 210 40% 98%;
+    --card: 270 50% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 270 50% 10%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 271 91% 65%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 270 50% 15%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 270 50% 10%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 270 50% 20%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 270 50% 15%;
+    --input: 270 50% 15%;
+    --ring: 271 91% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Light mode styles */
+body {
+  background: linear-gradient(to bottom, #ffffff, #f3e8ff);
+  min-height: 100vh;
+}
+
+.bg-gradient-to-b {
+  background: linear-gradient(to bottom, #ffffff, #f3e8ff);
+}
+
+.from-background {
+  --tw-gradient-from: #ffffff;
+}
+
+.to-secondary\/20 {
+  --tw-gradient-to: rgba(243, 232, 255, 0.2);
+}
+
+/* Upside-down gradient for courses section and footer in light mode */
+.courses-section,
+.site-footer {
+  background: linear-gradient(to top, #ffffff, #f3e8ff);
+}
+
+/* Light purple background for the first section in light mode */
+.hero-section {
+  background-color: #f3e8ff;
+}
+
+/* Dark mode styles */
+.dark body {
+  background: linear-gradient(to bottom, #1a0033, #000000);
+  min-height: 100vh;
+}
+
+.dark .bg-gradient-to-b {
+  background: linear-gradient(to bottom, #1a0033, #000000);
+}
+
+.dark .from-background {
+  --tw-gradient-from: #1a0033;
+}
+
+.dark .to-secondary\/20 {
+  --tw-gradient-to: rgba(0, 0, 0, 0.2);
+}
+
+/* Upside-down gradient for courses section and footer in dark mode */
+.dark .courses-section,
+.dark .site-footer {
+  background: linear-gradient(to top, #1a0033, #000000);
+}
+
+/* Dark purple background for the first section in dark mode */
+.dark .hero-section {
+  background-color: #1a0033;
+}
+
+/* Ensure proper scrolling for the courses page */
+html,
+body {
+  height: 100%;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
