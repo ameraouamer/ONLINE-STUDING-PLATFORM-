@@ -18,17 +18,12 @@ Welcome to **SkillSharing & Live Tutoring**, an online platform where users can 
 ## 📦 Installation & Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/skillsharing-platform.git
+   git clone https://github.com/ameraouamer/ONLINE-STUDING-PLATFORM-.git
    cd skillsharing-platform
    ```
 2. Install dependencies:
    ```sh
    npm install
-   ```
-3. Configure environment variables (`.env` file):
-   ```env
-   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
    ```
 4. Run the development server:
    ```sh
